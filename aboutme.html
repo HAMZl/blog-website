@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Motivation Tingz | About Me</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/jpg" href="./images.jpg"/>
+  </head>
+  <body>
+    <header>
+      <nav id="top">
+        <ul>
+          <li class="other"><a href="./index.html">Home</a></li>
+          <li id="blog-link" class="other"><a href="./blog.html">Blog Posts &#9661;</a></li>
+          <li class="other"><a href="./quotes.html">Quotes</a></li>
+          <li class="other"><a href="./resources.html">Resources</a></li>
+          <li id="about" class="current"><a href="./aboutme.html">About Me</a></li>
+        </ul>
+      </nav>
+      <div id="blog-titles">
+        <table>
+          <tr>
+            <th>Blogs</th>
+            <th>Featured Blogs</th>
+          </tr>
+          <tr>
+            <td><a class="blog-title" href="./ngannou.html">Francis Ngannou: From Sand Miner to Heavyweight Champ ></a></td>
+            <td><a class="blog-title" href="#">12 Things To Do at Home When You’re Bored ></a></td>
+          </tr>
+          <tr>
+            <td><a class="blog-title" href="./fivethings.html">5 Skills Must Develop ></a></td>
+            <td><a class="blog-title" href="https://www.thekidscirclefoundation.org/post/ways-to-build-your-self-confidence">Ways to Build Your Self-Confidence ></a></td>
+          </tr>
+          <tr>
+            <td><a class="blog-title" href="./tysonfury.html">Tyson Fury and The World of Depression ></a></td>
+            <td><a class="blog-title" href="https://blackdoctor.org/mike-tyson-i-hate-myself/2/">The Transformation of Mike Tyson: “I Used To Hate Myself…” ></a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="header">
+        <h1 id="title">Motivation Tingz: About Me</h1>
+        <br><br>
+      </div>
+    </header>
+    <main>
+      <section class="content-1">
+        <p>
+          Hey guys, I have created this website to motivate and encourage people
+          to keep working to words their goals. My name is Hamza Ahmed and I am
+          a student at the University of Leeds studying Computer Science with
+          Artificial Intelligence. I want to become a software engineer as I
+          love creating programs and finding out solutions to existing
+          problems as well as enhancing existing technologies. My goal is to
+          create applications and software that would improve peoples ability
+          to interact with machines as well as finding interesting solutions
+          to improve our way of thinking towards a  better and more
+          technologically advance future.
+        </p>
+        <h3>My Interests:</h3>
+        <ul id="interests">
+          <li>Drawing</li>
+          <li>Football</li>
+          <li>
+            <abbr title="Mixed Martial Arts">MMA</abbr>
+          </li>
+          <li>Learning about Computer science</li>
+        </ul>
+        <h3>Here are some of the drawings I have made:</h3>
+        <br>
+        <div id="art-buttons">
+          <button id="red-rose" onclick="clickCounterArtLocal()" type="button" name="button">Red Rose</button>
+          <button id="creative-sole" onclick="clickCounterArtLocal()" type="button" name="button">Creative Soul</button>
+          <button id="thug-rose" onclick="clickCounterArtLocal()" type="button" name="button">Thug Rose</button>
+          <button id="gun-n-rose" onclick="clickCounterArtLocal()" type="button" name="button">Gun n Rose</button>
+        </div>
+        <figure id="red-rose-art">
+          <img src="NFT-ROSE-red-green-pink.png" alt="Rose NFT art"/>
+          <br>
+          <figcaption>
+            Red Rose
+          </figcaption>
+        </figure>
+        <figure id="creative-sole-art">
+          <img src="artwork1.png" alt="Creative Soul art"/>
+          <br>
+          <figcaption>
+            Creative Soul
+          </figcaption>
+        </figure>
+        <figure id="thug-rose-art">
+          <img src="artwork2.png" alt="Thug Rose art"/>
+          <br>
+          <figcaption>
+            Thug Rose
+          </figcaption>
+        </figure>
+        <figure id="gun-n-rose-art">
+          <img src="artwork3.png" alt="Gun n Rose"/>
+          <br>
+          <figcaption>
+            Gun n Rose
+          </figcaption>
+        </figure>
+        <div id="artwork-viewed">
+
+        </div>
+      </section>
+      <section>
+        <div>
+          <h3>Location Finder</h3>
+          <p id="location-description">Click on the button below to find your coordinates.</p>
+          <button id="current-location" onclick="getCurrentLocation()" type="button" name="usecurrentlocation">
+            Use Current Location
+          </button>
+          <div id="map">
+          </div>
+          <div id="locations-viewed">
+
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Font Simulator</h3>
+        <form class="" action="./aboutme.html" method="post">
+          <br>
+          <label for="font-size">Font</label>
+          <select id="font" name="font">
+            <option value="helvetica">Helvetica</option>
+            <option value="verdana">Verdana</option>
+            <option value="georgia">Georgia</option>
+            <option value="arial">Arial</option>
+            <option value="tahoma">Tahoma</option>
+          </select>
+          <label for="font-size">Font Size</label>
+          <input id="font-size" type="text" placeholder="12" name="font-size">
+          <label for="font-weight">Font Weight</label>
+          <select id="font-weight" name="font-weight">
+            <option value="normal">Normal</option>
+            <option value="bold">Bold</option>
+          </select>
+          <br>
+          <br>
+          <textarea id="text" name="feedback" rows="8" cols="80" maxlength="280" placeholder="Type text here..." required></textarea>
+          <p class="chars-remaining">
+            <span class="characters-text">280</span> characters remaining
+        </form>
+        <h4>Preview:</h4>
+        <span id="text-result"></span>
+      </section>
+      <section>
+        <div class="form">
+          <h3>FeedBack</h3>
+          <p>If you have any suggestions to how I can improve my website please fill the form below to give your feedback.</p>
+          <br>
+          <form class="" action="./submit.html" method="post">
+            <label for="first-name">First Name*</label>
+            <input id="first-name" type="text" name="first-name" value="" required>
+            <label for="middle-name">Middle Name</label>
+            <input id="middle-name" type="text" name="middle-name" value="">
+            <label for="last-name">Last Name*</label>
+            <input id="last-name" type="text" name="last-name" value="" required>
+            <br>
+            <br>
+            <label for="nationality">Nationality</label>
+            <input id="nationality" type="text" name="nationality" value="">
+            <label for="age">Age*</label>
+            <input id="age" type="number" name="age" value="" min="1" max="99" required>
+            <br>
+            <br>
+            <p>User Feedback*</p>
+            <textarea id="response" name="feedback" rows="8" cols="80" maxlength="280" required></textarea>
+            <p class="chars-remaining">
+              <span class="characters">280</span> characters remaining
+            </p>
+            <br>
+            <input id="submit" type="submit">
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#top">Back To Top</a>
+      <p>©2022 All Rights Reserved</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="locator.js"></script>
+  </body>
+</html>

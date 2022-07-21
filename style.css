@@ -1,0 +1,268 @@
+* {
+  font-family: helvetica, sans-serif;
+  margin:0;
+  padding: 0;
+}
+p {
+  line-height: 1.65;
+}
+header, footer{
+  background-color: #000000;
+  color: #FFFFFF;
+}
+#title {
+  text-align: center;
+  padding: 50px 40px;
+  font-size: 56px;
+}
+.header p {
+  text-align: center;
+  padding-bottom: 15px;
+}
+body{
+  background-color: #003C64;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #1F1F1F;
+}
+nav ul li {
+  float: left;
+}
+.other:hover, .other a:hover, #current, #current a, .current, .current a, footer a, #about:hover, #about a:hover, .link:hover, .link-1:hover, .blog a:hover {
+  background-color: white;
+  color: black
+}
+.link:hover, .link-1:hover, .blog a:hover {
+  text-decoration: underline;
+  border: 1px solid black;
+}
+footer a {
+  width: 7%;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 25px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer p {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}
+nav ul li a {
+  display: block;
+  list-style-type: none;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 15px 20px;
+}
+#about{
+  float: right;
+}
+main {
+  width: 75%;
+  margin: 0 auto;
+  background-color: #7396D3;
+  padding: 20px;
+}
+section {
+  background-color: #C2ECFF;
+  padding: 20px;
+  margin: 15px 20px 10px 20px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#aboutme p, .content, .content-1 p, .introduction, dl dd, #conclusion, #books, #interests, figure {
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin: 10px;
+}
+dl dd {
+  margin: 20px 0;
+}
+dl dt {
+  font-size: 20px;
+  font-weight: bold;
+}
+.blogs {
+  overflow: hidden;
+}
+.blog {
+  width: 27.8%;
+  margin: 15px;
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  float: left;
+}
+@media screen and (max-width: 1900px) {
+  .blog {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .blog {
+    width: 50%;
+    margin: 15px auto;
+    overflow: hidden;
+    float: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .blog {
+    width: 70%;
+    margin: 15px auto;
+    overflow: hidden;
+    float: none;
+  }
+  .quote {
+    width: 70%;
+    padding: 15px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: 15px auto;
+  }
+}
+.blog h2, figcaption, .heading {
+  text-align: center;
+}
+.blog a {
+  float: right;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.blog p {
+  padding-top: 3px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.quote, .quote-extra {
+  width: 50%;
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  margin: 15px auto;
+}
+.quote blockquote, .quote-extra blockquote {
+  text-align: center;
+  margin: 20px;
+}
+.author {
+  float: right;
+  margin: 10px;
+}
+.link-1 {
+  clear: both;
+}
+.link, .link-1 {
+  float: right;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 5px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.resources ul li, .inf-ppl li {
+  background-color: #FFFFFF;
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 15px;
+}
+ol li, figcaption {
+  font-size: 24px;
+  font-weight: bold;
+}
+#books li, ol, #interests {
+  list-style-position: inside;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 15px;
+}
+.resoources ul li a, .inf-ppl li a {
+  font-size: 18px;
+}
+.resources ul li p, .inf-ppl li p {
+  margin: 10px 10px 10px 20px;
+}
+.blog img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+figure img {
+  width: 45%;
+  border: 1px solid black;
+}
+#blog-titles {
+  background-color: white;
+  padding-top: 8px;
+  display: none;
+}
+.blog-title {
+  color: grey;
+}
+.blog-title:hover {
+  color: black;
+  font-weight: bold;
+}
+td {
+  padding: 10px;
+}
+th {
+  color: black;
+}
+#more-quotes {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px;
+}
+#art-buttons {
+  text-align: center;
+}
+#art-buttons button {
+  padding: 15px 25px;
+}
+.details-button {
+  border-color: white;
+  background-color: white;
+}
+.details{
+  text-align: center;
+}
+.chars-remaining {
+  color: grey;
+  font-size: 13px;
+}
+.submission {
+  text-align: center;
+}
+iframe {
+  width: 830px;
+  height: 500px;
+  margin: 0 auto;
+}
